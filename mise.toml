@@ -1,0 +1,17 @@
+[tools]
+rust = { version = "1.97.1", components = "rust-analyzer" }
+
+[tasks.ttest]
+run = "cargo test --all"
+
+[tasks.tbuild]
+run = "cargo build"
+
+[tasks.tcheck]
+run = "cargo clippy --all --all-targets -- -D warnings"
+
+[tasks.tformat]
+run = "cargo fmt --all"
+
+[tasks.tci]
+run = ["mise run tformat", "mise run tcheck", "mise run ttest"]
