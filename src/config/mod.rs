@@ -66,7 +66,7 @@ const CLIENTS_FIELD: &str = "clients";
 const SERVE_ADDR: &str = "127.0.0.1:8000";
 
 const SYNC_MODELS_URL: &str =
-    "https://raw.githubusercontent.com/sigoden/aichat/refs/heads/main/models.yaml";
+    "https://raw.githubusercontent.com/vitorqb/aichat/refs/heads/main/models.yaml";
 
 const SUMMARIZE_PROMPT: &str =
     "Summarize the discussion briefly in 200 words or less to use as a prompt for future context.";
